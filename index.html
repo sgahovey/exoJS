@@ -1,15 +1,13 @@
 <html>
 <body>
-
-    <input type="text" id="message" />
+    <input type="text" id="message" oninput="modif();"/>
 <div>
-    <button type="button" id="btn" onClick="modif();">Modif</button>
+    <button type="button" id="btn" >Modif</button>
 </div>
-
 <script>
    function modif() {
-            let message = document.getElementById('message').value;
-            document.getElementById('btn').innerHTML = message;
+    let message = document.getElementById('message').value;
+    document.getElementById('btn').innerHTML = message;
         }
 </script>
 
